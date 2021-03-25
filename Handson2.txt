@@ -1,0 +1,183 @@
+1)
+mysql> create table WORLDCITY (City varchar(30),Country varchar(30),Continent varchar(30),Latitude numeric(5,2),NorthSouth varchar(10),Longitude numeric(5,2),
+    -> EastWest varchar(10));
+Query OK, 0 rows affected (0.38 sec)
+
+
+mysql>  insert into worldcity values ('Athenes','Greece','Europe',37.59,'N',23.44,'E');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values ('Atlanta','United States','Europe',33.45,'N',84.23,'W');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('Dallas','United States','North America',33.47,'N',96.47,'W');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('Nashville','United States','North America',36.09,'N',86.46,'W');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('Victoria','Canada','North America',48.25,'N',123.21,'W');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('peterborough','Canada','North America',44.18,'N',79.18,'W');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('vancouver','Canada','North America',49.18,'N',123.04'W');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('Toledo','United States','North America',41.39,'N',83.82,'W');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('Warsaw','Poland','Europe',52.15,'N',21.00,'E');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('Lima','Peru','South America',12.03,'S',77.03,'W');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values ('Rio De Janeriro','Brazil','South America',22.43,'S',43.13,'W');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values ('santiago','Chile','South America',33.27,'S',70.40,'W');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values ('Bogota','Colombia','South America',4.36,'N',74.05,'W');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values ('Buenos Aires','argentina','South america',34.36,'S',58.28,'W');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values ('Quito','Ecuador','South America',0.13,'S',78.30,'w');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values ('Carcas','Venezuela','South America',10.30,'N',77.12,'E');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> insert into worldcity values ('Madras','India','Asia',28.36,'N',77.12,'E');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values ('Bombay','India','Asia',18.58,'N',72.50,'E');
+Query OK, 1 row affected (0.07 sec)
+mysql> insert into worldcity values ('Manchester','England','Europe',51.30,'N',0.0,'null');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into worldcity values ('Moscow','Russia','Europe',55.45,'N',37.35,'E');
+Query OK, 1 row affected (0.06 sec)
+
+mysql> insert into worldcity values ('Paris','France','Europe',48.52,'N',2.20,'E');
+Query OK, 1 row affected (0.08 sec)
+
+mysql> insert into worldcity values('Shenyang','china','Asia',41.48,'N',123.27,'E');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into worldcity values ('Cairo','Egypt','Africa',30.03,'N',31.15,'E');
+Query OK, 1 row affected (0.11 sec)
+mysql> insert into worldcity values ('Tripoli','Lybia','Africa',32.54,'N',13.11,'E');
+Query OK, 1 row affected (0.07 sec)
+
+mysql>  insert into worldcity values ('Beijing','China','Asia',39.56,'N',116.24,'E');
+Query OK, 1 row affected (0.10 sec)
+
+mysql>  insert into worldcity values ('Rome','Italy','Europe',41.54,'N',12.29,'E');
+Query OK, 1 row affected (0.06 sec)
+
+mysql>  insert into worldcity values ('Tokyo','Japan','Asia',35.42,'N',12.29,'E');
+Query OK, 1 row affected (0.05 sec)
+
+mysql>  insert into worldcity values ('Sydney','Australia','Australia',33.52,'S',151.13,'E');
+Query OK, 1 row affected (0.06 sec)
+
+mysql>  insert into worldcity values ('Sparta','Greece','Europe',37.05,'N',22.27,'E');
+Query OK, 1 row affected (0.07 sec)
+
+mysql>  insert into worldcity values ('Madrid','Spain','Europe',40.24,'N',3.41,'W');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> select * from worldcity;
++----------------+---------------+---------------+----------+------------+-----------+----------+
+| City           | Country       | Continent     | Latitude | NorthSouth | Longitude | EastWest |
++----------------+---------------+---------------+----------+------------+-----------+----------+
+| Athenes        | Greece        | Europe        |    37.59 | N          |     23.44 | E        |
+| Atlanta        | United States | Europe        |    33.45 | N          |     84.23 | W        |
+| Dallas         | United States | North America |    32.47 | N          |     96.47 | W        |
+| Nashville      | United States | North America |    36.09 | N          |     86.46 | W        |
+| victoria       | canada        | North america |    48.25 | N          |    123.21 | W        |
+| peterborough   | canada        | North america |    44.18 | N          |     79.18 | W        |
+| vancouver      | canada        | North America |    49.18 | N          |    123.04 | W        |
+| Toledo         | United States | North America |    41.39 | N          |     83.82 | W        |
+| Warsaw         | poland        | Europe        |    52.15 | N          |     21.00 | E        |
+| Lima           | peru          | South America |    12.03 | S          |     77.03 | W        |
+| Rio De Janeiro | Brazil        | South America |    22.43 | S          |     43.13 | W        |
+| santiago       | Chile         | South America |    33.27 | S          |     70.40 | W        |
+| Bogota         | Colombia      | South America |     4.36 | N          |     74.05 | W        |
+| Buenos Aires   | Argentina     | South America |    34.36 | S          |     58.28 | W        |
+| Quito          | Ecuador       | South America |     0.13 | S          |     78.30 | W        |
+| Carcas         | Venezuela     | South America |    10.30 | N          |     77.12 | E        |
+| Madras         | India         | Asia          |    28.36 | N          |     77.12 | E        |
+| Bombay         | India         | Asia          |    18.58 | N          |     72.50 | E        |
+| Manchester     | England       | Europe        |    51.30 | N          |      0.00 | null     |
+| Moscow         | Russia        | Europe        |    55.45 | N          |     37.35 | E        |
+| Paris          | France        | Europe        |    48.52 | N          |      2.20 | E        |
+| Shenyang       | china         | Asia          |    41.48 | N          |    123.27 | E        |
+| Cairo          | Egypt         | Africa        |    30.03 | N          |     31.15 | E        |
+| Tripoli        | Lybia         | Africa        |    32.54 | N          |     13.11 | E        |
+| Beijing        | China         | Asia          |    39.56 | N          |    116.24 | E        |
+| Rome           | Italy         | Europe        |    41.54 | N          |     12.29 | E        |
+| Tokyo          | Japan         | Asia          |    35.42 | N          |     12.29 | E        |
+| Sydney         | Australia     | Australia     |    33.52 | S          |    151.13 | E        |
+| Sparta         | Greece        | Europe        |    37.05 | N          |     22.27 | E        |
+| Madrid         | Spain         | Europe        |    40.24 | N          |      3.41 | W        |
++----------------+---------------+---------------+----------+------------+-----------+----------+
+30 rows in set (0.00 sec)
+
+
+1)
+mysql> select city,country from worldcity where city like 'R%';
++----------------+---------+
+| city           | country |
++----------------+---------+
+| Rio De Janeiro | Brazil  |
+| Rome           | Italy   |
++----------------+---------+
+2 rows in set (0.00 sec)
+
+2)mysql> select city,country from worldcity where city like '%A';
++----------+---------------+
+| city     | country       |
++----------+---------------+
+| Atlanta  | United States |
+| victoria | canada        |
+| Lima     | peru          |
+| Bogota   | Colombia      |
+| Sparta   | Greece        |
++----------+---------------+
+5 rows in set (0.00 sec)
+
+
+3)mysql> select city,country from worldcity where city like 'M%' and length(city)=6;
++--------+---------+
+| city   | country |
++--------+---------+
+| Madras | India   |
+| Moscow | Russia  |
+| Madrid | Spain   |
++--------+---------+
+3 rows in set (0.04 sec)
+
+
+4)mysql> select city,country from worldcity where city like '_A%';
++------------+---------------+
+| city       | country       |
++------------+---------------+
+| Dallas     | United States |
+| Nashville  | United States |
+| vancouver  | canada        |
+| Warsaw     | poland        |
+| santiago   | Chile         |
+| Carcas     | Venezuela     |
+| Madras     | India         |
+| Manchester | England       |
+| Paris      | France        |
+| Cairo      | Egypt         |
+| Madrid     | Spain         |
++------------+---------------+
+11 rows in set (0.00 sec)
